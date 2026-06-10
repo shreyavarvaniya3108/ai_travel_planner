@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import "./styles.css";
 
-function Ai_Travel() {
+function AiTravel() {
   const [formData, setFormData] = useState({
     DESTINATION: "",
     DAYS: "",
@@ -206,4 +206,4 @@ function Ai_Travel() {
   );
 }
 
-export default Ai_Travel;
+export default AiTravel;
