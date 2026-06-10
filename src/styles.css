@@ -1,0 +1,1718 @@
+
+.heading{
+
+    text-align: center;
+    color: rgb(158, 82, 82);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.travel-card {
+  width: 320px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.travel-card:hover {
+  transform: scale(1.05);
+}
+
+.travel-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.travel-content {
+  padding: 20px;
+}
+
+.travel-content h2 {
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.travel-content p {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.travel-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #334155;
+}
+
+/* button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #0ea5e9;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0284c7;
+} */
+ 
+html, body, #root{
+  height: 100%;
+}
+body{
+
+    /* background-image: url(./image/img.jpg); */
+    background-image: url(./image/ChatGPT\ Image\ May\ 12\,\ 2026\,\ 10_08_28\ AM.png);
+    background-attachment: fixed;
+    
+    color: rgb(119, 29, 29);
+}
+
+.formm{
+
+  align-items: center;
+  display: block;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+  color: rgb(158, 82, 82);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color:rgb(158, 82, 82);
+}
+
+.header-btn button {
+  padding: 10px 22px;
+  border: none;
+  background: rgb(158, 82, 82);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.header-btn button:hover {
+  background: rgb(158, 82, 82);
+}
+
+
+.formm {
+  
+
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  
+
+  border-radius: 16px;
+
+  /* smoother blended background */
+  background: #00000024;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    
+  transition: 0.3s ease;
+
+  position: relative;
+
+          padding: 27px;
+    
+
+    width: 366px;
+    gap: 14px;
+    margin: 50px;
+    
+}
+
+/* soft hover (very subtle) */
+.formm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+}
+
+/* labels */
+.formm label {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* inputs */
+.formm input {
+  padding: 12px 14px;
+
+  border-radius: 10px;
+
+  border: 1px solid #b0cff8;
+
+  outline: none;
+
+  background: #465b704a;
+
+  color: #334155;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+/* focus using your main color */
+.formm input:focus {
+  border: 1px solid #b0cff8;
+
+  box-shadow: 0 0 0 3px rgba(158, 82, 82, 0.12);
+
+  background: #00000024;
+}
+
+/* button */
+.formm button {
+  margin-top: 8px;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: rgb(158, 82, 82);
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* hover */
+.formm button:hover {
+  background: #8a4747;
+  transform: scale(1.02);
+}
+
+/* top accent line (your second color) */
+.formm::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  height: 4px;
+  width: 100%;
+
+  background: #64748b;
+
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+
+.card{
+
+  color: #fffdfdc9;
+  display: flex;
+  background-color: #e2e8f0;
+      background: linear-gradient(135deg, #dceeff5c, #bfe9ff85, #eafbff94);
+  
+}
+
+.as{
+
+  color: #ffa4a4bf;
+}
+
+.main{
+
+  margin: 100px;
+    margin-left: 500px;
+}
+.para{
+
+  color: #333333;
+}
+
+.trip-table{
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.trip-table th,
+.trip-table td{
+  border: 1px solid white;
+  padding: 12px;
+  text-align: center;
+}
+
+.trip-table th{
+  background-color: #64748b;
+}
+
+.main{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:20px;
+      margin: 50px;
+    margin-left: 139px;
+    background: linear-gradient(135deg, #dceeff5c, #bfe9ff85, #eafbff94);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.formm{
+  display:flex;
+  flex-direction:column;
+  width:300px;
+  gap:10px;
+}
+
+input{
+  padding:10px;
+}
+
+button{
+  padding:10px;
+  background:#64748b;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+
+.trip-table{
+  margin-top:20px;
+  border-collapse:collapse;
+  width:60%;
+}
+
+.trip-table td, th{
+  border:1px solid #ccc;
+  padding:10px;
+}
+
+.error{
+  color:red;
+}
+
+.formm{
+
+      margin: 12px;
+    width: 400px;
+    height: 440px;
+    gap: 35px;
+}
+
+img{
+
+  height: 230px;
+}
+
+.trip-table {
+  width: 85%;
+  margin: 30px auto;
+  border-collapse: collapse;
+
+  /* 🌫️ Transparent glass effect */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 15px;
+  overflow: hidden;
+
+  /* shadow */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+  color: white;
+}
+
+
+
+.trip-table th {
+  background: rgba(100, 116, 139, 0.6);
+  padding: 14px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.trip-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.trip-table tr:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+/* FULL PAGE */
+
+.card{
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    flex-wrap: wrap;
+
+    padding: 50px 30px;
+
+    /* 🌈 Gradient Background */
+    background: linear-gradient(
+        135deg,
+        #dceeff5c,
+        #bfe9ff85,
+        #eafbff94
+    );
+}
+
+
+/* CARD DESIGN */
+
+.formm{
+    width: 320px;
+    height: 480px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    /* 🌫️ Glass Effect */
+       background: rgb(196 238 255 / 21%);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    transition: 0.4s ease;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 18px;
+}
+
+
+/* ✨ HOVER EFFECT */
+
+.formm:hover{
+    transform: translateY(-10px) scale(1.03);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.22);
+}
+
+
+/* IMAGE */
+
+.formm img{
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    margin-top: 10px;
+}
+
+
+/* HEADING */
+
+.formm h1{
+    font-size: 28px;
+
+    color: #1e293b;
+
+    margin-bottom: 8px;
+
+    letter-spacing: 1px;
+}
+
+
+/* PARAGRAPH */
+
+.para{
+    margin-top: 18px;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    text-align: center;
+
+    color: #334155;
+
+    padding: 0 5px;
+}
+
+
+/* 📱 RESPONSIVE */
+
+@media(max-width: 1024px){
+
+    .card{
+        gap: 25px;
+    }
+
+    .formm{
+        width: 300px;
+    }
+}
+
+
+@media(max-width: 768px){
+
+    .card{
+        flex-direction: column;
+    }
+
+    .formm{
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+
+
+/* HOME PAGE */
+
+.home{
+
+min-height:100vh;
+
+background:
+linear-gradient(
+rgba(255,255,255,.35),
+rgba(220,230,240,.45)
+),
+
+linear-gradient(
+135deg,
+#f7e7db,
+#dceeff,
+#c9dce9,
+#bfd1dc
+);
+    background: linear-gradient(135deg, #dceeff1a, #bfe9ff8c, #eafbff4f);
+
+}
+
+.navbar button{
+
+  background:none;
+  border:none;
+
+  cursor:pointer;
+
+  color:#333;
+
+  font-size:17px;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px;
+
+text-align:left;
+
+gap: 60px;
+
+flex-wrap: wrap;
+
+}
+
+
+.hero-content{
+
+max-width:550px;
+
+padding:45px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,0.20);
+
+backdrop-filter:blur(15px);
+
+box-shadow:0 10px 35px rgba(0,0,0,.12);
+
+}
+
+
+.hero-content h1{
+
+font-size:62px;
+
+color:#1e293b;
+
+line-height:1.2;
+
+margin-bottom:20px;
+
+}
+
+
+.hero-content span{
+
+color:rgb(158,82,82);
+
+}
+
+
+.hero-content p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#475569;
+
+margin-bottom:35px;
+
+}
+
+
+/* BUTTONS */
+
+.hero-btns{
+
+display:flex;
+
+justify-content:flex-start;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+
+.start-btn{
+
+padding:14px 28px;
+
+border:none;
+
+border-radius:12px;
+
+background:rgb(158,82,82);
+
+color:white;
+
+font-size:17px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+
+.start-btn:hover{
+
+transform:translateY(-3px);
+
+background:#8a4747;
+
+}
+
+
+.learn-btn{
+
+padding:14px 28px;
+
+border:none;
+
+border-radius:12px;
+
+background:#64748b;
+
+color:white;
+
+font-size:17px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+
+.learn-btn:hover{
+
+background:#475569;
+
+}
+
+
+/* FEATURES */
+
+.features{
+
+padding:90px 50px;
+
+text-align:center;
+
+}
+
+
+.features h2{
+
+font-size:42px;
+
+margin-bottom:50px;
+
+color:#1e293b;
+
+}
+
+
+.feature-cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+
+.feature-card{
+
+width:320px;
+
+padding:30px;
+
+border-radius:24px;
+
+background:rgba(255,255,255,.20);
+
+backdrop-filter:blur(12px);
+
+box-shadow:0 8px 25px rgba(0,0,0,.10);
+
+transition:.3s;
+}
+
+
+.feature-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+.feature-card h3{
+
+font-size:24px;
+
+color:#1e293b;
+
+margin-bottom:15px;
+
+}
+
+
+.feature-card p{
+
+font-size:16px;
+
+line-height:1.7;
+
+color:#475569;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+font-size:40px;
+
+}
+
+.hero-content p{
+
+font-size:17px;
+
+}
+
+.hero{
+  gap: 30px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero-btns {
+  justify-content: center;
+}
+
+.hero-slider {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+}
+
+.features h2{
+
+font-size:32px;
+
+}
+
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 140px;     /* heading aur nav ke beech zyada space */
+    padding: 18px 40px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 55px;      /* Home, Destination, Trips ke beech zyada gap */
+}
+
+.nav-links span{
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.chat-container {
+  width: 400px;
+  margin: auto;
+  border-radius: 10px;
+  background: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  border: 1px solid #ccc;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.user-msg {
+  text-align: right;
+  background: #64748b;
+  color: white;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.bot-msg {
+  text-align: left;
+  background: #e2e8f0;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.input-box {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* HERO SLIDER ANIMATION */
+.hero-slider {
+  position: relative;
+  width: 450px;
+  height: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.05) translateX(30px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 20px;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+}
+
+/* ==================================
+   FULL SCREEN BACKGROUND SLIDER
+=================================== */
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; /* Screen se bahar kuch nahi jayega */
+  z-index: 1;
+}
+
+.hero-slider-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* Bilkul sabse peeche */
+}
+
+/* Sliding from Right to Center Effect! */
+.fullscreen-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  opacity: 0;
+  transform: translateX(100%); /* Start hidden on the Right */
+  transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1); /* Sexy smooth speed */
+}
+
+.fullscreen-slide.active {
+  opacity: 1;
+  transform: translateX(0); /* Slide into Center */
+}
+
+/* Yahi aapka semi-transparent Gradient hai jo images ke uper rahega */
+.hero-gradient-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(220, 238, 255, 0.4), rgba(191, 233, 255, 0.6), rgba(234, 251, 255, 0.4));
+  z-index: -1;
+}
+
+/* ==================================
+   CENTERED HERO DIV BOX Layout
+=================================== */
+
+.text-center-hero {
+  display: flex;
+  justify-content: center; /* Div ko Screen ke Center me layega */
+  align-items: center;
+  min-height: 100vh;
+}
+
+.text-centered-box {
+  text-align: center;      /* Text ko Center krega */
+  margin: 0 auto;
+}
+
+/* Div Box Centered buttons */
+.center-buttons {
+  display: flex;
+  justify-content: center !important; /* Button ko box ke center me */
+  gap: 20px;
+}
+
+
+/* ==================================
+   AI TRAVEL PLANNER - MODERN ANIMATION CSS
+   (Gradient SAME, ONLY ANIMATION UPGRADE)
+=================================== */
+
+.travel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 20px;
+  perspective: 1200px;
+}
+
+/* ============================
+ AI TRAVEL UNIQUE FORM DESIGN
+ Gradient SAME rahega
+============================ */
+
+.travel-section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    padding:70px 20px;
+}
+
+/* Floating background elements */
+
+.travel-section::before{
+    content:"✈️";
+    position:absolute;
+    top:8%;
+    left:6%;
+    font-size:80px;
+    opacity:.10;
+    animation:floatOne 7s ease-in-out infinite;
+}
+
+.travel-section::after{
+    content:"🌍";
+    position:absolute;
+    bottom:10%;
+    right:7%;
+    font-size:90px;
+    opacity:.10;
+    animation:floatTwo 8s ease-in-out infinite;
+}
+
+/* FORM CONTAINER */
+
+.travel-form-container{
+
+    width:430px;
+    max-width:95%;
+
+    padding:42px;
+
+    border-radius:35px;
+
+    position:relative;
+    overflow:hidden;
+
+    backdrop-filter:blur(18px);
+
+    /* GRADIENT SAME — DON'T CHANGE */
+
+    box-shadow:
+    0 20px 55px rgba(0,0,0,.20);
+
+    transition:
+    transform .55s ease,
+    box-shadow .55s ease;
+}
+
+/* 3D Hover */
+
+.travel-form-container:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.02)
+    rotateX(4deg);
+
+    box-shadow:
+    0 35px 70px rgba(0,0,0,.30);
+}
+
+/* Animated Glow Ring */
+
+.travel-form-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-3px;
+
+    border-radius:35px;
+
+    background:
+    linear-gradient(
+        135deg,
+        transparent,
+        rgba(255,255,255,.15),
+        transparent
+    );
+
+    animation:rotateGlow 8s linear infinite;
+
+    z-index:-1;
+}
+
+/* Shine Sweep */
+
+.travel-form-container::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-130%;
+
+    width:60%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+
+    transform:skewX(-30deg);
+
+    transition:1s;
+}
+
+.travel-form-container:hover::after{
+    left:170%;
+}
+
+/* TITLE */
+
+.travel-form-container h2{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    margin-bottom:8px;
+
+    letter-spacing:1px;
+
+    transition:.4s;
+}
+
+.travel-form-container:hover h2{
+    letter-spacing:3px;
+}
+
+/* Subtitle */
+
+.form-subtitle{
+
+    text-align:center;
+
+    opacity:.8;
+
+    margin-bottom:30px;
+
+    font-size:.95rem;
+}
+
+/* INPUT GROUP */
+
+.input-group{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:22px;
+}
+
+.input-icon{
+
+    position:absolute;
+
+    left:18px;
+
+    font-size:1.2rem;
+
+    z-index:5;
+}
+
+/* INPUT STYLE */
+
+.input-group input{
+
+    width:100%;
+
+    padding:16px 18px 16px 55px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+    font-size:1rem;
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    background .35s ease;
+}
+
+.input-group input:focus{
+
+    transform:scale(1.03);
+
+    background:rgba(255,255,255,.18);
+
+    box-shadow:
+    0 0 18px rgba(14,165,233,.35);
+}
+
+.input-group input::placeholder{
+    color:rgba(255,255,255,.65);
+}
+
+/* BUTTON */
+
+.generate-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    transition:
+    transform .4s ease,
+    letter-spacing .35s ease,
+    box-shadow .35s ease;
+}
+
+.generate-btn:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.03);
+
+    letter-spacing:1px;
+
+    box-shadow:
+    0 12px 28px rgba(0,0,0,.25);
+}
+
+/* Spinner */
+
+.spinner{
+
+    width:24px;
+    height:24px;
+
+    border:3px solid rgba(255,255,255,.35);
+
+    border-top:3px solid white;
+
+    border-radius:50%;
+
+    display:inline-block;
+
+    animation:spin .8s linear infinite;
+}
+
+/* ENTRY ANIMATION */
+
+.travel-form-container{
+
+    opacity:0;
+
+    transform:
+    translateY(90px)
+    scale(.85)
+    rotateX(25deg);
+}
+
+.unfold-animation{
+
+    animation:unfoldForm 1.4s cubic-bezier(.22,.61,.36,1) forwards;
+}
+
+/* WEATHER CARD */
+
+.weather-widget{
+
+    margin-top:35px;
+
+    padding:24px;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(10px);
+
+    transition:.45s;
+}
+
+.weather-widget:hover{
+    transform:translateY(-8px) scale(1.03);
+}
+
+/* TABLE */
+
+.modern-trip-table{
+
+    margin-top:40px;
+
+    border-collapse:collapse;
+
+    width:90%;
+
+    max-width:800px;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(12px);
+}
+
+.modern-trip-table th,
+.modern-trip-table td{
+
+    padding:18px;
+}
+
+.modern-trip-table tbody tr{
+
+    transition:.35s;
+}
+
+.modern-trip-table tbody tr:hover{
+
+    transform:scale(1.02);
+
+    background:rgba(255,255,255,.08);
+}
+
+/* KEYFRAMES */
+
+@keyframes unfoldForm{
+
+    from{
+        opacity:0;
+        transform:
+        translateY(90px)
+        scale(.85)
+        rotateX(25deg);
+    }
+
+    to{
+        opacity:1;
+        transform:
+        translateY(0)
+        scale(1)
+        rotateX(0);
+    }
+}
+
+@keyframes rotateGlow{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes spin{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes floatOne{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-30px) rotate(15deg);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+@keyframes floatTwo{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(25px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+
+/* 🌟 UNIQUE ANIMATIONS FOR DESTINATION CARDS */
+
+/* 1. Initial State (Hidden & Scaled/Translated out of view) */
+/* Apply this ONLY when javascript added classes exist, to ensure no conflicts with other .formm instances */
+.dest-card {
+    opacity: 0;
+    transform: translateY(100px) scale(0.9) rotate(-3deg);
+    transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 2. Entrance Animation State */
+.dest-card.run-animation {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+}
+
+/* 3. Staggered Delays for Sequential Entrance */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.3s; }
+.delay-3 { transition-delay: 0.5s; }
+
+/* 4. Unique Interactive Hover State
+   Using transform, transition, and scale without altering background gradient */
+.dest-card.run-animation:hover {
+    transform: translateY(-15px) scale(1.05) perspective(1000px) rotateX(6deg) rotateY(-3deg);
+    box-shadow: -10px 25px 45px rgba(0,0,0,0.3);
+    /* Adding subtle brightness keeps underlying gradient and makes it look glowing */
+    filter: brightness(1.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+/* =========================
+ DESTINATION CARD SECTION
+========================= */
+
+.card{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:35px;
+    padding:60px 20px;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Floating Background Travel Stickers */
+
+.card::before{
+    content:"✈️";
+    position:absolute;
+    top:8%;
+    left:4%;
+    font-size:65px;
+    opacity:0.12;
+    animation: floatSticker 6s infinite ease-in-out;
+}
+
+.card::after{
+    content:"🧭";
+    position:absolute;
+    bottom:10%;
+    right:5%;
+    font-size:70px;
+    opacity:0.10;
+    animation: floatSticker2 7s infinite ease-in-out;
+}
+
+/* Extra background logo */
+
+.dest-card::before{
+    content:"🌍";
+    position:absolute;
+    top:10px;
+    right:18px;
+    font-size:28px;
+    opacity:0.25;
+    animation: spinLogo 10s linear infinite;
+}
+
+/* CARD DESIGN */
+
+.formm{
+    width:320px;
+    padding:20px;
+    border-radius:28px;
+    position:relative;
+    overflow:hidden;
+
+    /* Gradient SAME rahega */
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+    0 12px 35px rgba(0,0,0,0.18);
+
+    transition:
+    transform .55s ease,
+    box-shadow .55s ease,
+    filter .45s ease;
+}
+
+/* Hover Animation */
+
+.formm:hover{
+
+    transform:
+    translateY(-15px)
+    scale(1.04)
+    rotateX(5deg);
+
+    box-shadow:
+    0 25px 55px rgba(0,0,0,0.35);
+
+    filter:brightness(1.05);
+}
+
+/* Shiny sweep effect */
+
+.formm::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-130%;
+    width:70%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.28),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+    transition:.9s;
+}
+
+.formm:hover::after{
+    left:170%;
+}
+
+/* IMAGE EFFECT */
+
+.formm img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:18px;
+
+    transition:
+    transform .55s ease,
+    filter .45s ease;
+}
+
+.formm:hover img{
+    transform:scale(1.09);
+    filter:saturate(120%);
+}
+
+/* Heading animation */
+
+.formm h1{
+    transition:.45s;
+}
+
+.formm:hover h1{
+    letter-spacing:2px;
+    transform:translateX(5px);
+}
+
+/* Paragraph */
+
+.para{
+    line-height:1.7;
+}
+
+/* ENTRY ANIMATION */
+
+.dest-card{
+    opacity:0;
+    transform:translateY(90px) scale(.85);
+}
+
+.run-animation{
+    animation:cardReveal 1.1s forwards;
+}
+
+.delay-1{
+    animation-delay:.2s;
+}
+
+.delay-2{
+    animation-delay:.45s;
+}
+
+.delay-3{
+    animation-delay:.7s;
+}
+
+/* KEYFRAMES */
+
+@keyframes cardReveal{
+    from{
+        opacity:0;
+        transform:translateY(90px) scale(.85);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+@keyframes floatSticker{
+    0%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+    50%{
+        transform:translateY(-25px) rotate(12deg);
+    }
+
+    100%{
+        transform:translateY(0px) rotate(0deg);
+    }
+}
+
+@keyframes floatSticker2{
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(20px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+@keyframes spinLogo{
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
