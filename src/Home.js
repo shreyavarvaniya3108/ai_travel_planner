@@ -13,21 +13,23 @@ const images = [img1, img2, img3, img4, img5];
 function Home({ setPage }) {
   const [currentIdx, setCurrentIdx] = useState(0);
 
-  // Background Slider animation
+
+
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIdx((prevIdx) => (prevIdx + 1) % images.length);
-    }, 4000); // Har 4 second me left-right slide hoga
-    return () => clearInterval(timer);
-  }, [images.length]);
+    const interval = setInterval(() => {
+      setCurrentIdx((prev) => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="home">
-      
+
       {/* 🌟 NEW: FULL SCREEN BACKGROUND SLIDER 🌟 */}
       <div className="hero-slider-fullscreen">
         {images.map((img, index) => (
-          <img 
+          <img
             key={index}
             src={img}
             alt={`travel-slide-${index}`}
@@ -40,7 +42,7 @@ function Home({ setPage }) {
       <div className="hero-gradient-overlay"></div>
 
       <div className="hero text-center-hero">
-        
+
         {/* CENTERED EPIC 3D GLASS DIV */}
         <div className="hero-content custom-text-pattern text-centered-box">
           <h1 className="hero-title">
@@ -49,7 +51,7 @@ function Home({ setPage }) {
           <p className="hero-subtitle">
             Smart AI Travel Planner
           </p>
-          
+
           <div className="hero-btns center-buttons">
             <button className="start-btn" onClick={() => document.getElementById("travel")?.scrollIntoView({ behavior: "smooth" })}>
               Plan Trip
@@ -59,7 +61,7 @@ function Home({ setPage }) {
             </button>
           </div>
         </div>
-        
+
       </div>
     </div>
   );
