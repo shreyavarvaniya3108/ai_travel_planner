@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
 import Destination from "./Destination";
-import AiTravel from "./AiTravel";
+import TravelPlanner from "./TravelPlanner";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       </section>
 
       <section id="travel">
-        <AiTravel />
+        <TravelPlanner />
       </section>
     </div>
   );

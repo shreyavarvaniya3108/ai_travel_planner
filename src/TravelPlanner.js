@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import "./styles.css";
 
-function AiTravel() {
+function TravelPlanner() {
   const [formData, setFormData] = useState({
     DESTINATION: "",
     DAYS: "",
@@ -126,9 +126,9 @@ function AiTravel() {
       <div className={`travel-form-container ${isVisible ? "unfold-animation" : ""}`}>
         <h2>WanderWise 🌍✨</h2>
         <p className="form-subtitle">Let AI design your dream journey</p>
-        
+
         <form className="travel-form" onSubmit={handleSubmit}>
-          
+
           <div className="input-group">
             <span className="input-icon">📍</span>
             <input
@@ -194,7 +194,7 @@ function AiTravel() {
           <tbody>
             {tripPlan.map((item, index) => (
               <tr key={index}>
-                <td style={{fontWeight: 'bold', color: '#0ea5e9'}}>Day {item.day}</td>
+                <td style={{ fontWeight: 'bold', color: '#0ea5e9' }}>Day {item.day}</td>
                 <td>{item.place}</td>
               </tr>
             ))}
@@ -206,4 +206,4 @@ function AiTravel() {
   );
 }
 
-export default AiTravel;
+export default TravelPlanner;
