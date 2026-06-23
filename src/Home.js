@@ -14,13 +14,12 @@ function Home({ setPage }) {
   const [currentIdx, setCurrentIdx] = useState(0);
 
 
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIdx((prev) => (prev + 1) % images.length);
-    }, 3000);
+    const timer = setInterval(() => {
+      setCurrentIdx((prevIdx) => (prevIdx + 1) % images.length);
+    }, 4000);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(timer);
   }, []);
 
   return (
