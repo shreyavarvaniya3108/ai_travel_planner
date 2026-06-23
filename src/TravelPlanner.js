@@ -125,7 +125,7 @@ function TravelPlanner() {
       {/* NEW UNIQUE FORM: JAB ISVISIBLE TRUE HOGA, UNFOLD ANIMATION CHALEGA */}
       <div className={`travel-form-container ${isVisible ? "unfold-animation" : ""}`}>
         <h2>WanderWise 🌍✨</h2>
-        <p className="form-subtitle">Let AI design your dream journey</p>
+        <p className="form-subtitle">Let design your dream journey</p>
 
         <form className="travel-form" onSubmit={handleSubmit}>
 

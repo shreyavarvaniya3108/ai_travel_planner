@@ -9,7 +9,7 @@ function Header() {
   return (
     <header className="header">
 
-      <h1>🐦‍🔥 AI Travel Planner</h1>
+      <h1>🐦‍🔥Travel Planner</h1>
 
       <nav className="nav-links">
         <span onClick={() => scrollTo("home")}>Home</span>

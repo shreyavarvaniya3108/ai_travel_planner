@@ -48,7 +48,7 @@ function Home({ setPage }) {
             Welcome To WanderWise 🌍✈️
           </h1>
           <p className="hero-subtitle">
-            Smart AI Travel Planner
+            Smart Travel Planner
           </p>
 
           <div className="hero-btns center-buttons">
