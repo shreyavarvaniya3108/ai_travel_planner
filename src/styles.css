@@ -1588,3 +1588,148 @@ button {
     transform: rotate(360deg);
   }
 }
+
+/* =========================================================
+   📱 MOBILE RESPONSIVE FIX PATCH
+   (Niche likhe rules sabse end me hain isliye sabko override
+   karenge — upar ke kisi bhi rule ko delete karne ki zaroorat nahi)
+========================================================= */
+
+/* Body/page par accidental horizontal scroll rokne ke liye */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Global image rule ko responsive banaya */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  /* ---- HEADER FIX ---- */
+  .header {
+    gap: 12px;
+    padding: 12px 18px;
+    flex-wrap: wrap;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  /* ---- FORM CARD FIX (height fixed tha, ab auto) ---- */
+  .formm {
+    width: 92% !important;
+    max-width: 360px !important;
+    height: auto !important;
+    min-height: auto;
+    margin: 16px auto;
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .formm img {
+    height: 180px;
+  }
+
+  /* ---- MAIN SECTION FIX ---- */
+  .main {
+    margin: 20px 10px !important;
+    padding: 12px;
+  }
+
+  /* ---- TRAVEL CARD FIX ---- */
+  .travel-card {
+    width: 92%;
+    max-width: 340px;
+  }
+
+  /* ---- CHAT BOX FIX ---- */
+  .chat-container {
+    width: 92%;
+    max-width: 360px;
+    height: 420px;
+  }
+
+  /* ---- TABLE FIX (old .trip-table) ---- */
+  .trip-table {
+    width: 100%;
+    font-size: 13px;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .trip-table th,
+  .trip-table td {
+    padding: 8px;
+  }
+
+  /* ---- HERO CONTENT ---- */
+  .hero-content {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  /* ---- FEATURE CARDS ---- */
+  .features {
+    padding: 50px 16px;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 340px;
+    padding: 20px;
+  }
+
+  /* ---- TRAVEL FORM CONTAINER ---- */
+  .travel-form-container {
+    width: 92%;
+    padding: 22px;
+  }
+
+  /* ---- DESTINATION CARDS ---- */
+  .card {
+    gap: 20px;
+    padding: 40px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .formm {
+    width: 96% !important;
+  }
+
+  .header {
+    padding: 10px 14px;
+  }
+}
+
+/* =========================================================
+   📱 NAV MENU TEXT FIX
+   (white text white menu background par invisible ho raha tha)
+========================================================= */
+@media (max-width: 768px) {
+  .nav-links span {
+    color: #1e293b !important;
+  }
+
+  .nav-links.active {
+    z-index: 1100;
+  }
+}
